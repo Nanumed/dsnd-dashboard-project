@@ -2,6 +2,9 @@
 from sqlite3 import connect
 import pandas as pd
 
+# Import the QueryMixin class from sql_execution
+from .sql_execution import QueryMixin
+
 # Define a class called QueryBase
 # Use inheritance to add methods for querying the employee_events database.
 class QueryBase(QueryMixin):
